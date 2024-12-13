@@ -148,6 +148,77 @@
 </div>
 <!-- blog section end -->
 <style>
+   .blog_box {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.blog_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog_img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+.blog_box:hover .blog_img {
+    transform: scale(1.05);
+}
+
+.blog_heading {
+    transition: color 0.3s ease;
+}
+
+.blog_box:hover .blog_heading {
+    color: #f00d0d;
+}
+
+.blog_text {
+    transition: color 0.3s ease;
+}
+
+.blog_box:hover .blog_text {
+    color: #800202;
+}
+
+.read_more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f00d0d;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.read_more:hover {
+    color: #f00d0d;
+}
+
+.read_more::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #f00d0d;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.read_more:hover::after {
+    width: 100%;
+}
+
    /* Style for blog images */
 .blog_img {
     width: 100%; /* Ensures the image spans the width of the container */
@@ -186,10 +257,10 @@
          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a card effect */
       }
       .blog_title, .blog_heading {
-         color: #006076; /* Matching theme color for headings */
+         color: #f00d0d; /* Matching theme color for headings */
       }
       .read_more {
-         color: #0dcaf0; /* Link color to match theme */
+         color: #8b0505; /* Link color to match theme */
          text-decoration: none;
       }
       .read_more:hover {

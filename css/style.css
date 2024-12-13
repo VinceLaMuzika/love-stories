@@ -406,7 +406,7 @@ button {
 .services_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
 }
 
 .services_taital {
@@ -994,7 +994,7 @@ button {
     width: 100%;
     float: left;
     background-color: #122c2d;
-    height: auto;
+    height: 5rem;
 }
 
 .copyright_text {
